@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://marikazia.github.io/rsschool-cv/cv
