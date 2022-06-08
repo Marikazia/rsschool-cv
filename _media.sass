@@ -1,0 +1,220 @@
+$circle-bg: #ffcd33
+$text-black: #000
+$button-bg: #ff591f
+$bg-color: #f5f7fa
+$r-bg-color: #ffffff
+$title-clr: #000
+$sidebar-bg: #4c6154
+$text-white: #ffffff
+$text-yellow: #feffad
+$text-grey: #777777
+$orange: #FB6D3A
+$light-gray: #c5c5c5
+$col-gr-59: #595959
+$title-bg-col1: #4c6154
+$title-bg-col2: #607762
+$title-bg-col3: #778f80
+
+@media ( max-width: 991.98px )
+
+	.main-conteiner
+		display: grid
+		grid-template-columns: 0.9fr 2fr
+
+	/* Sidebar section */
+
+	.sidebar-section
+		&-img
+
+	.contact-section
+		&-type
+			margin-left: 10px
+
+		&-link
+			font-size: 15px
+
+    // Tech skills sections & // Soft skills section
+
+	.tech-skills-section, .soft-skills-section
+		margin: 0 20px
+
+	.tech-skills, .soft-skills
+		&-item
+			margin-left: -10px
+
+	/* Main content section */
+
+	.about-me
+		&-description
+            // margin-bottom: 5px
+			font-size: 16px
+
+	/* My projects */
+
+	.my-project-section
+		margin-top: 5px
+	.my-projects
+		&-text
+			font-size: 16px
+        // &-link
+        //     font-size: 16px
+
+	/* My work experience */  
+
+	.my-work-experience
+		margin-top: 5px
+
+	/* My education */
+	.my-education-block
+		display: grid
+		grid-template-columns: 1.5fr 1fr
+		grid-column-gap: 5px
+
+	/* My сertificates */
+
+	.my-certificates-section
+		margin-top: 5px
+
+	.certificate-img
+		&-one
+			width: 32%
+
+	.certificate-img-one:hover
+		transform: scale(2.5)
+
+@media ( max-width: 575.98px )
+
+	.main-conteiner
+		width: 100%
+		display: flex
+		flex-direction: column
+        // grid-template-column: 1fr
+        // // grid-template-rows: 1fr 2fr
+
+        // grid-template-areas: "sidebar-section", "main-content-section"
+
+        // grid-template-rows:  0.9fr 3fr
+        // grid-template-areas: "sidebar-section", "main-content-section"
+
+	.sidebar-section
+		grid-area: "main-conteiner"
+		position: relative
+		grid-column: 1/2
+		grid-row: 1/2
+
+	.main-content-section
+		grid-area: "main-conteiner"
+		position: relative
+		grid-column: 1/2
+		grid-row: 2/3
+		width: 100%
+
+	.sidebar-section
+		display: grid
+		align-items: start
+		grid-template-rows: 0.5fr 1fr 2fr 1fr
+		grid-template-columns: 1fr 1fr
+		grid-template-areas: "about-me-name-prof", "sidebar-section-img", "contact-section", "tech-skills-section", "soft-skills-section", "language-knowledges-section"
+		&-img
+			display: none
+            // grid-area: "sidebar-section"
+            // position: relative
+            // grid-column: 1/2
+            // grid-row: 2/3
+            // width: 80%
+
+	.sidebar-section-img-small
+		display: block
+		grid-area: "sidebar-section"
+		position: relative
+		grid-column: 1/2
+		grid-row: 2/3
+		width: 80%
+
+	.about-me-name-prof-side
+		display: inline
+		grid-area: "sidebar-section"
+		grid-column: 1/3
+		grid-row: 1/2
+
+	.about-me-name
+		font-size: 30px
+		margin-top: 10px
+		color: $text-white
+
+	.about-me-prof
+		color: $text-yellow
+
+	.about-me-name-prof
+		display: none
+        // grid-area: "sidebar-section"
+        // position: 
+        // grid-column: 1/3
+        // grid-row: 1/2
+
+    // contact section
+
+	.contact-section
+		grid-area: "sidebar-section"
+		position: relative
+		grid-column: 2/3
+		grid-row: 2/3
+		margin-left: -20px
+		margin-top: 30px
+		font-size: 14px
+		&-link
+			font-size: 13px
+
+	.tech-skills-section
+		grid-area: "sidebar-section"
+		position: relative
+		grid-column: 1/2
+		grid-row: 3/4
+		margin-top: 10px
+
+	.soft-skills-section
+		grid-area: "sidebar-section"
+		position: relative
+		grid-column: 2/3
+		grid-row: 3/4
+		margin-top: 10px
+
+	.language-knowledges-section
+		grid-area: "sidebar-section"
+		position: relative
+		grid-column: 1/3
+		grid-row: 4/5
+
+	/* My content section */ 
+
+	.main-content-section
+
+	.about-me
+		&-description
+			margin: 15px
+
+	.my-project-section
+		margin-left: 15px
+
+	.my-projects
+		&-list-ol
+
+	.my-work-experience
+		&-section
+			margin-left: 15px
+
+	.my-education
+		grid-column-gap: 15px
+		&-section
+			margin-left: 15px
+
+	.my-certificates
+		&-section
+			margin-left: 15px
+		&-block
+			margin-top: 10px
+
+	.certificate-img
+		&-one
+            // width: 50%
+			width: 100%
