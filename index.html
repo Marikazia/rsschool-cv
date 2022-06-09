@@ -26,6 +26,14 @@
 
   <!-- Main conteiner-->
   <div class="main-conteiner">
+
+    <header >
+      <nav class="header-nav"> 
+        <a href="#" class="header-nav__link">Services</a>
+        <a href="#" class="header-nav__link">Our works</a>
+      </nav>
+    </header>
+
     <div class="total-conteiner">
 
       <!--sidebar section-->
@@ -273,29 +281,15 @@
       
           <pre class="pre">
             <code class="code">
-
-              const param = {
-                "url" : "https://api.openweathermap.org/data/2.5/",
-                "appid" : "1d72818f3ec58cf275fccaaad5b344e1"
-              }
-              function getWeather() {
-                let ct = document.querySelector('#city').value;
-                  fetch(`${param.url}weather?id=${ct}&appid=${param.appid}`)
-                      .then(weather => {
-                          return weather.json();
-                      }).then(showWeather);
-              }
-              function showWeather(data) {
-                console.log(data);
-                  // document.querySelector('#city').onchange = data.name;
-                  document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&deg';
-                  document.querySelector('.description').textContent = data.weather[0]['description'];
-                  document.querySelector('.img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
-                // здесь вы выводите на страницу
-              }
-              getWeather();
-              document.querySelector('#city').onchange = getWeather;
-
+              .body
+                background-color: $light-gray
+            
+              .main-container
+                font-family: 'Montserrat', sans-serif
+                max-width: 1200px
+                background-color: $r-bg-color
+                margin: 40px auto
+                box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)          
             </code>
           </pre>
 
@@ -357,8 +351,7 @@
         <a href="https://github.com/Marikazia" target="_blank"><i class="fa fa-3x fa-github social-item"></i></a></li>
         <a href="https://www.linkedin.com/in/mariana-machohan-11b0a6213/" target="_blank"><i
             class="fa fa-3x fa-linkedin-square social-item"></i></a>
-        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_school"
-            width="150px"><i class=" social-item"></i></a>
+        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" class="rs-logo"><i class=" social-item"></i></a>
       </div>
 
     </footer>
