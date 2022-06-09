@@ -21,20 +21,22 @@ $title-bg-col3: #778f80
     flex-direction: column
 
   .total-conteiner
-    display: grid
-    grid-template-columns: 0.9fr 2fr
+    // display: grid
+    // grid-template-columns: 0.9fr 2fr
 
     /* Sidebar section */
 
   .sidebar-section
+
     &-img
 
   .contact-section
     &-type
       margin-left: 10px
+      font-size: 12px
 
     &-link
-      font-size: 15px
+      font-size: 12px
 
       // Tech skills sections & // Soft skills section
 
@@ -76,6 +78,10 @@ $title-bg-col3: #778f80
     grid-template-columns: 1.5fr 1fr
     grid-column-gap: 5px
 
+  // .code
+  .code-example-section
+    display: none
+
     /* My сertificates */
 
   .my-certificates-section
@@ -107,26 +113,28 @@ $title-bg-col3: #778f80
     // grid-template-areas: "sidebar-section", "main-content-section"
 
   .sidebar-section
-    grid-area: "main-conteiner"
-    position: relative
-    grid-column: 1/2
-    grid-row: 1/2
+    width: 100%
+    // grid-area: "main-conteiner"
+    // position: relative
+    // grid-column: 1/2
+    // grid-row: 1/2
 
   .sidebar-title
 
   .main-content-section
-    grid-area: "main-conteiner"
-    position: relative
-    grid-column: 1/2
-    grid-row: 2/3
     width: 100%
+    // grid-area: "main-conteiner"
+    // position: relative
+    // grid-column: 1/2
+    // grid-row: 2/3
+    // width: 100%
 
   .sidebar-section
-    display: grid
-    align-items: start
-    grid-template-rows: 0.5fr 1fr 2fr 1fr
-    grid-template-columns: 1fr 1fr
-    grid-template-areas: "about-me-name-prof", "sidebar-section-img", "contact-section", "tech-skills-section", "soft-skills-section", "language-knowledges-section"
+    // display: grid
+    // align-items: start
+    // grid-template-rows: 0.5fr 1fr 2fr 1fr
+    // grid-template-columns: 1fr 1fr
+    // grid-template-areas: "about-me-name-prof", "sidebar-section-img", "contact-section", "tech-skills-section", "soft-skills-section", "language-knowledges-section"
     &-img
       display: none
       // grid-area: "sidebar-section"
@@ -167,15 +175,11 @@ $title-bg-col3: #778f80
     // contact section
 
   .contact-section
-    grid-area: "sidebar-section"
-    position: relative
-    grid-column: 2/3
-    grid-row: 2/3
-    margin-left: -20px
+    // margin-left: -20px
     margin-top: 30px
-    font-size: 14px
+    font-size: 18px
     &-link
-      font-size: 13px
+      font-size: 18px
 
   .tech-skills-section
     grid-area: "sidebar-section"
