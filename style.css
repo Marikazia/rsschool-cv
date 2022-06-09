@@ -13,6 +13,31 @@
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
+header {
+  text-align: center;
+  background-color: rgba(96, 119, 98, 0.2);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.header-nav__link {
+  margin: 5px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
 .total-conteiner {
   display: flex;
 }
@@ -324,7 +349,8 @@ h4 {
 }
 
 .pre {
-  margin-left: -12%;
+  margin-left: -7%;
+  height: 100%;
 }
 
 /* Educational project */
