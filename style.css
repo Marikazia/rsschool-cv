@@ -27,7 +27,7 @@ header {
 }
 
 .header-nav__link {
-  margin: 5px;
+  margin: 0 125px;
   color: #000;
   font-style: normal;
   font-weight: normal;
@@ -432,6 +432,9 @@ h4 {
     display: flex;
     flex-direction: column;
   }
+  .header-nav__link {
+    margin: 0 80px;
+  }
   .total-conteiner {
     /* Sidebar section */
   }
@@ -496,6 +499,9 @@ h4 {
 }
 
 @media (max-width: 575.98px) {
+  .header-nav__link {
+    margin: 0 15px;
+  }
   .total-conteiner {
     width: 100%;
     display: flex;
