@@ -14,8 +14,7 @@
 }
 
 .total-conteiner {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  display: flex;
 }
 
 h1 {
@@ -35,6 +34,7 @@ h4 {
 }
 
 .sidebar-section {
+  width: 30%;
   background-color: #607762;
   justify-content: center;
   align-items: center;
@@ -117,8 +117,7 @@ h4 {
 
 /* Main content section */
 .main-content-section {
-  position: relative;
-  margin-top: 0px;
+  width: 70%;
 }
 
 .about-me-section {
@@ -324,9 +323,14 @@ h4 {
   line-height: 30px;
 }
 
+.pre {
+  margin-left: -12%;
+}
+
 /* Educational project */
 .educational-project-section {
   padding-bottom: 20px;
+  margin-left: 5%;
 }
 
 .educational-project-link {
@@ -403,15 +407,14 @@ h4 {
     flex-direction: column;
   }
   .total-conteiner {
-    display: grid;
-    grid-template-columns: 0.9fr 2fr;
     /* Sidebar section */
   }
   .contact-section-type {
     margin-left: 10px;
+    font-size: 12px;
   }
   .contact-section-link {
-    font-size: 15px;
+    font-size: 12px;
   }
   .tech-skills-section .soft-skills-section {
     margin: 0 20px;
@@ -446,6 +449,9 @@ h4 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-column-gap: 5px;
+  }
+  .code-example-section {
+    display: none;
     /* My сertificates */
   }
   .my-certificates-section {
@@ -470,24 +476,10 @@ h4 {
     flex-direction: column;
   }
   .sidebar-section {
-    grid-area: "main-conteiner";
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .main-content-section {
-    grid-area: "main-conteiner";
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 2/3;
     width: 100%;
   }
-  .sidebar-section {
-    display: grid;
-    align-items: start;
-    grid-template-rows: 0.5fr 1fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "about-me-name-prof", "sidebar-section-img", "contact-section", "tech-skills-section", "soft-skills-section", "language-knowledges-section";
+  .main-content-section {
+    width: 100%;
   }
   .sidebar-section-img {
     display: none;
@@ -518,16 +510,11 @@ h4 {
     display: none;
   }
   .contact-section {
-    grid-area: "sidebar-section";
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-left: -20px;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .contact-section-link {
-    font-size: 13px;
+    font-size: 18px;
   }
   .tech-skills-section {
     grid-area: "sidebar-section";
