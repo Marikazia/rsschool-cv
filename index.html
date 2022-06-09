@@ -266,6 +266,62 @@
           </div>
         </div>
 
+        <!-- Code Example -->
+        <div class="code-example-section">
+          <h3 class="code-example-title">Code Example</h3>
+          <div class="title-bg">
+      
+          <pre class="pre">
+            <code class="code">
+
+              const param = {
+                "url" : "https://api.openweathermap.org/data/2.5/",
+                "appid" : "1d72818f3ec58cf275fccaaad5b344e1"
+              }
+              function getWeather() {
+                let ct = document.querySelector('#city').value;
+                  fetch(`${param.url}weather?id=${ct}&appid=${param.appid}`)
+                      .then(weather => {
+                          return weather.json();
+                      }).then(showWeather);
+              }
+              function showWeather(data) {
+                console.log(data);
+                  // document.querySelector('#city').onchange = data.name;
+                  document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&deg';
+                  document.querySelector('.description').textContent = data.weather[0]['description'];
+                  document.querySelector('.img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+                // здесь вы выводите на страницу
+              }
+              getWeather();
+              document.querySelector('#city').onchange = getWeather;
+
+            </code>
+          </pre>
+
+          </div>
+        </div>
+
+        <!-- Educational project -->
+        <div class="educational-project-section">
+          <h3 class="educational-project-title">Educational project</h3>
+          <ul>
+            <li class="my-projects-item">
+              <span class="my-projects-text">
+                <a href="https://github.com/Marikazia/rsschool-cv" class="my-projects-link"><span
+                    class="my-projects-bracket">[</span> My first CV <span class="my-study-time-devider">||</span> <a href="https://my-first-site-on-grid.netlify.app" class="educational-project-link">Example at netlify.app</a> <span class="my-projects-bracket">]</span> </a>
+              </span>
+            </li>
+            <li class="my-projects-item">
+              <span class="my-projects-text">
+                <a href="https://github.com/Marikazia/my-first-site-on-grid-" class="my-projects-link"><span
+                    class="my-projects-bracket">[</span> My first site on grid <span class="my-study-time-devider">||</span> <a href="https://my-first-site-on-grid.netlify.app" class="educational-project-link">Example at netlify.app</a> <span class="my-projects-bracket">]</span> </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
         <!-- Certificates -->
         <div class="my-certificates-section">
           <h3 class="main-content-title">Certificates</h3>
@@ -277,6 +333,7 @@
             <img src="img/certificate_HTML+CSS.png" class="certificate-img-one" alt="certificate-Responsive-web-design">
           </div>
         </div>
+		
 
       </div>
 
