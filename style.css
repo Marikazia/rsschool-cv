@@ -24,6 +24,11 @@ header {
   align-items: center;
   justify-content: center;
   height: 50px;
+  margin: 0;
+}
+
+.header-nav-li {
+  list-style-type: none;
 }
 
 .header-nav__link {
