@@ -36,8 +36,8 @@ $footer-bg-col1: rgba(96,119,98, 0.2)
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
 
 .total-conteiner
-  display: grid
-  grid-template-columns: 1fr 2.5fr
+  display: flex
+  // grid-template-columns: 1fr 2.5fr
 
 h1
   margin: 0
@@ -52,6 +52,7 @@ h4
 // Sidebar section 
 
 .sidebar-section
+  width: 30%
   // display: grid
   // grid-row-gap: 5px
   background-color: $title-bg-col2
@@ -130,8 +131,10 @@ h4
 /* Main content section */
 
 .main-content-section
-  position: relative
-  margin-top: 0px
+  width: 70%
+  // display: block
+  // position: relative
+  // margin-top: 0px
 
 // .d1
 //     position: absolute
@@ -342,9 +345,11 @@ h4
   line-height: 30px
 
 .pre
+  margin-left: -12%
   // width: 100%
 
 .code
+
   // width: 120%
   // margin: 0
   // padding: 0
@@ -353,6 +358,7 @@ h4
 
 .educational-project-section
   padding-bottom: 20px
+  margin-left: 5%
 
 .educational-project-link
   text-decoration: none
