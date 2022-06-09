@@ -28,12 +28,32 @@ $footer-bg-col1: rgba(96,119,98, 0.2)
 
 .main-conteiner
   font-family: 'Montserrat', sans-serif
-  // display: flex
-  // flex-direction: row-reverse
   max-width: 1200px
   background-color: $r-bg-color
   margin: 40px auto
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
+
+header
+  text-align: center
+  background-color: $footer-bg-col1
+
+.header-nav
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  height: 50px
+
+.header-nav__link
+  margin: 5px
+  color: $text-black
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  text-decoration: none
+  align-items: center
+  justify-content: center
 
 .total-conteiner
   display: flex
@@ -323,8 +343,8 @@ h4
     position: relative
     grid-column: 1/2
     grid-row: 2/3
-            // margin: 0
-            // padding: 0
+    // margin: 0
+    // padding: 0
   &-two
     grid-area: my-education-block-two
     position: relative
@@ -344,12 +364,14 @@ h4
   margin-left: -40px
   line-height: 30px
 
+.code-example-section
+  // height: 250px
+
 .pre
-  margin-left: -12%
-  // width: 100%
+  margin-left: -7%
+  height: 100%
 
 .code
-
   // width: 120%
   // margin: 0
   // padding: 0
@@ -429,5 +451,6 @@ h4
   color: $sidebar-bg
 
 .social-item
-
+.rs-logo
+  // width: 150px
 @import '_media.sass'
