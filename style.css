@@ -390,7 +390,6 @@ h4 {
 }
 
 .footer-base {
-  position: relative;
   display: flex;
   flex-direction: row;
   height: 100px;
@@ -498,7 +497,6 @@ h4 {
     transform: scale(2.5);
   }
   .footer-base {
-    position: relative;
     width: 100%;
   }
 }
