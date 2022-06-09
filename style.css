@@ -1,0 +1,614 @@
+@charset "UTF-8";
+/* *, *:before, *:after
+ box-sizing: border-box */
+.body {
+  background-color: #c5c5c5;
+}
+
+.main-conteiner {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  background-color: #ffffff;
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  background-color: rgba(96, 119, 98, 0.2);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 0;
+}
+
+.header-nav-li {
+  list-style-type: none;
+}
+
+.header-nav__link {
+  margin: 0 125px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-conteiner {
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.sidebar-section {
+  width: 30%;
+  background-color: #607762;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-section-img {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar-section-img-small {
+  display: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-me-name-prof-side {
+  display: none;
+}
+
+.contact-section {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.contact-section-type {
+  margin-left: 20px;
+}
+
+.contact-section-link {
+  margin: 5px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.contact-section-ul {
+  padding-inline-start: 0px;
+  margin-bottom: 0;
+}
+
+.contact-section-li {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.sidebar-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  margin: 10px 0 0 3%;
+}
+
+.contact-section, .tech-skills-section, .soft-skills-section, .language-knowledges-section {
+  margin: 10px 5% 0 5%;
+}
+
+.tech-skills-item, .soft-skills-item {
+  color: #feffad;
+}
+
+.tech-skills-item-text, .soft-skills-item-text {
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Main content section */
+.main-content-section {
+  width: 70%;
+}
+
+.about-me-section {
+  margin-top: 15px;
+  position: relative;
+}
+
+.about-me {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.about-me-name {
+  margin: 0;
+  position: relative;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  line-height: 60px;
+}
+
+.about-me-prof {
+  margin: 0;
+  position: relative;
+  color: #607762;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about-me-description {
+  height: auto;
+  margin: 15px 40px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-content-title {
+  text-align: center;
+  font-size: 20px;
+  margin-left: -40px;
+  line-height: 30px;
+}
+
+/* My projects */
+.my-project-section {
+  margin: 0 40px;
+}
+
+.my-projects-list-ol {
+  margin: 0 20px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.my-projects-item {
+  margin: 5px 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.my-projects::marker {
+  padding: 0;
+}
+
+.my-projects-text {
+  margin: 10px;
+  color: #595959;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.my-projects-link {
+  color: #595959;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.my-projects-bracket {
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* My work experience */
+.my-work-experience-section {
+  margin: 10px 0 0 40px;
+}
+
+.my-work-experience-position {
+  margin-top: 5px;
+  color: #000;
+}
+
+.my-work-experience-company {
+  margin-left: 10px;
+  color: #607762;
+  font-weight: bold;
+}
+
+.my-work-experience-period {
+  font-size: 12px;
+  color: #777777;
+}
+
+.my-work-experience-devider {
+  color: #000;
+}
+
+.my-work-experience-duties {
+  padding-left: 20px;
+  line-height: 24px;
+}
+
+.my-work-experience-duty {
+  color: #595959;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.my-work-experience::marker {
+  color: #607762;
+}
+
+/* My education */
+.my-education {
+  display: grid;
+  margin: 0;
+}
+
+.my-education-section {
+  color: #000;
+  margin: 0 40px;
+}
+
+.my-education-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 10px;
+  color: #607762;
+}
+
+.my-education-prof {
+  margin-top: 10px;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.my-education-time {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777777;
+}
+
+.my-study-time-devider {
+  color: #000;
+}
+
+.my-education-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "my-education-block-one" "my-education-block-two";
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.my-education-block-one {
+  grid-area: my-education-block-one;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.my-education-block-two {
+  grid-area: my-education-block-two;
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* Code Example */
+.code-example-section, .educational-project-section {
+  margin: 0 40px;
+}
+
+.code-example-title, .educational-project-title {
+  text-align: center;
+  font-size: 20px;
+  margin-left: -40px;
+  line-height: 30px;
+}
+
+.pre {
+  margin-left: -7%;
+  height: 100%;
+}
+
+/* Educational project */
+.educational-project-section {
+  padding-bottom: 20px;
+  margin-left: 5%;
+}
+
+.educational-project-link {
+  text-decoration: none;
+  color: #4c6154;
+}
+
+/* My сertificates */
+.my-certificates-section {
+  margin: 0 40px;
+}
+
+.certificate-img {
+  padding: 10px;
+}
+
+.certificate-img-one {
+  width: 25%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.certificate-img-one:hover {
+  transform: scale(2.5);
+  transition: 0.7s;
+}
+
+.footer-base {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(96, 119, 98, 0.2);
+  margin: auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.footer-descriptoin-ul {
+  margin-left: -10%;
+  padding-inline-start: 0px;
+}
+
+.footer-descriptoin-li {
+  list-style-type: none;
+  color: #000;
+}
+
+.footer-descriptoin-fp {
+  color: #777777;
+}
+
+.social {
+  width: 40%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+  color: #4c6154;
+}
+
+@media (max-width: 991.98px) {
+  .main-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-nav__link {
+    margin: 0 80px;
+  }
+  .total-conteiner {
+    /* Sidebar section */
+  }
+  .contact-section-type {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .contact-section-link {
+    font-size: 12px;
+  }
+  .tech-skills-section .soft-skills-section {
+    margin: 0 20px;
+  }
+  .tech-skills .soft-skills-item {
+    margin-left: -10px;
+  }
+  .language-knowledges-section {
+    margin: 0;
+    /* Main content section */
+  }
+  .about-me {
+    /* My projects */
+  }
+  .about-me-description {
+    font-size: 16px;
+  }
+  .my-project-section {
+    margin-top: 5px;
+  }
+  .my-projects {
+    /* My work experience */
+  }
+  .my-projects-text {
+    font-size: 16px;
+  }
+  .my-work-experience {
+    margin-top: 5px;
+    /* My education */
+  }
+  .my-education-block {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 5px;
+  }
+  .code-example-section {
+    display: none;
+    /* My сertificates */
+  }
+  .my-certificates-section {
+    margin-top: 5px;
+  }
+  .certificate-img-one {
+    width: 32%;
+  }
+  .certificate-img-one:hover {
+    transform: scale(2.5);
+  }
+  .footer-base {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-nav__link {
+    margin: 0 15px;
+  }
+  .total-conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-section {
+    width: 100%;
+  }
+  .main-content-section {
+    width: 100%;
+  }
+  .sidebar-section-img {
+    display: none;
+  }
+  .sidebar-section-img-small {
+    display: block;
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+  }
+  .about-me-name-prof-side {
+    display: inline;
+    grid-area: "sidebar-section";
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .about-me-name {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  .about-me-prof {
+    color: #feffad;
+  }
+  .about-me-name-prof {
+    display: none;
+  }
+  .contact-section {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .contact-section-link {
+    font-size: 18px;
+  }
+  .tech-skills-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 10px;
+  }
+  .soft-skills-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 10px;
+  }
+  .language-knowledges-section {
+    grid-area: "sidebar-section";
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    /* My content section */
+  }
+  .about-me-description {
+    margin: 15px;
+  }
+  .my-project-section {
+    margin-left: 15px;
+  }
+  .my-work-experience-section {
+    margin-left: 15px;
+  }
+  .my-education {
+    grid-column-gap: 15px;
+  }
+  .my-education-section {
+    margin-left: 15px;
+  }
+  .my-certificates-section {
+    margin-left: 15px;
+  }
+  .my-certificates-block {
+    margin-top: 10px;
+  }
+  .certificate-img-one {
+    width: 100%;
+  }
+  .footer-base {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-descriptoin-ul {
+    margin-left: 5%;
+  }
+  .social {
+    width: 70%;
+    margin-left: 5%;
+  }
+}

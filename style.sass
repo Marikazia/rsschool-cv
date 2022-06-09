@@ -1,0 +1,459 @@
+/* *, *:before, *:after 
+ box-sizing: border-box
+ // body
+//   font-family: sans-serif
+//   margin: 0 */
+
+$header-bg: #fff9e6
+$circle-bg: #ffcd33
+$text-black: #000
+$button-bg: #ff591f
+$bg-color: #f5f7fa
+$r-bg-color: #ffffff
+$title-clr: #000
+$sidebar-bg: #4c6154
+$text-white: #ffffff
+$text-yellow: #feffad
+$text-grey: #777777
+$orange: #FB6D3A
+$light-gray: #c5c5c5
+$col-gr-59: #595959
+$title-bg-col1: #4c6154
+$title-bg-col2: #607762
+$title-bg-col3: #778f80
+$footer-bg-col1: rgba(96,119,98, 0.2)
+
+.body
+  background-color: $light-gray
+
+.main-conteiner
+  font-family: 'Montserrat', sans-serif
+  max-width: 1200px
+  background-color: $r-bg-color
+  margin: 40px auto
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
+
+header
+  text-align: center
+  background-color: $footer-bg-col1
+
+.header-nav
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  height: 50px
+  margin: 0
+  &-li
+    list-style-type: none
+
+.header-nav__link
+  margin: 0 125px
+  color: $text-black
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  text-decoration: none
+  align-items: center
+  justify-content: center
+
+.total-conteiner
+  display: flex
+  // grid-template-columns: 1fr 2.5fr
+
+h1
+  margin: 0
+h2
+  margin: 0
+h3
+  margin: 0
+
+h4
+  margin: 0
+
+// Sidebar section 
+
+.sidebar-section
+  width: 30%
+  // display: grid
+  // grid-row-gap: 5px
+  background-color: $title-bg-col2
+  justify-content: center
+  align-items: center
+  &-img
+    width: 90%
+    margin-left: 5%
+    margin-top: 20px
+    margin-bottom: 10px
+
+.sidebar-section-img-small
+  display: none
+  width: 90%
+  margin-left: 5%
+  margin-top: 20px
+  margin-bottom: 10px
+
+.about-me-name-prof-side
+  display: none
+
+// contact section
+
+.contact-section
+  // margin: 10px 0 20px 20px
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  color: $text-white
+  &-type
+    margin-left: 20px
+      // margin-top: 15px
+  &-link
+    margin: 5px
+    color: $text-black
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+    text-decoration: none
+
+.contact-section-ul
+  padding-inline-start: 0px
+  margin-bottom: 0
+
+.contact-section-li
+  margin-left: 0
+  list-style-type: none
+
+.sidebar-title
+  color: $text-white
+  font-weight: bold
+  font-size: 22px
+  line-height: 27px
+  margin: 10px 0 0 3%
+
+// Tech skills sections & // Soft skills section
+
+.contact-section, .tech-skills-section, .soft-skills-section, .language-knowledges-section
+  margin: 10px 5% 0 5%
+
+.tech-skills, .soft-skills
+  &-item
+    color: $text-yellow
+    &-text
+      color: $text-black
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 24px
+
+.language-knowledges-section
+  // margin: 0 20px 20px 20px
+
+/* Main content section */
+
+.main-content-section
+  width: 70%
+  // display: block
+  // position: relative
+  // margin-top: 0px
+
+// .d1
+//     position: absolute
+//     margin-top: 0
+//     width: 100%
+//     height: 20px
+//     background-color: $sidebar-bg
+
+// .d2
+//     position: absolute
+//     margin-top: 20px
+//     width: 100%
+//     height: 80px
+//     background-color: $title-bg-col2
+
+// .d3
+//     position: absolute
+//     margin-top: 100px
+//     width: 100%
+//     height: 50px
+//     background-color: $title-bg-col3
+
+// About me 
+
+.about-me-section
+  margin-top: 15px
+  position: relative
+.about-me
+  font-style: normal
+  font-weight: bold
+  &-name
+    margin: 0
+    position: relative
+    color: $text-black
+    text-align: center
+    justify-content: center
+    font-size: 35px
+    line-height: 60px
+    // background-color: $title-bg-col2
+  &-prof
+    margin: 0
+    // background-color: $title-bg-col3
+    position: relative
+    color: $title-bg-col2
+    text-align: center
+    // justify-content: center
+    font-size: 20px
+    line-height: 30px
+    // margin-top: 27px
+    // margin-bottom: 20px
+  &-description
+    // padding: 5px 0 10px 0
+    height: auto
+    margin: 15px 40px
+    text-align: justify
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+
+.main-content-title
+  text-align: center
+  font-size: 20px
+  margin-left: -40px
+  line-height: 30px
+    // background-color: $text-yellow
+
+// .title-bg
+//     background-color: $sidebar-bg 
+//     width: 110%
+//     height: 11px
+//     margin-left: -6%
+//     margin-top: -60px
+
+/* My projects */  
+
+.my-project-section
+  margin: 0 40px
+
+.my-projects
+  &-list-ol
+    margin: 0 20px
+      // margin: 15px 0
+    font-weight: bold
+    padding: 0
+  &-item
+    margin: 5px 0
+      // padding: 5px
+    color: $text-black
+    font-weight: bold
+  &::marker
+    padding: 0
+  &-text
+    margin: 10px
+    color: $col-gr-59
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+      // margin-left: 5px
+  &-link
+    color: $col-gr-59
+    font-style: normal
+    font-weight: normal
+    text-decoration: none
+  &-bracket
+    color: $text-black
+    font-style: normal
+    font-weight: bold
+
+/* My work experience */
+
+.my-work-experience
+  margin-top:
+  &-section
+    margin: 10px 0 0 40px
+  &-company-block
+  &-position
+    margin-top: 5px
+    color: $text-black
+  &-company
+    margin-left: 10px
+    color: $title-bg-col2
+    font-weight: bold
+  &-period
+    font-size: 12px
+    color: $text-grey
+  &-devider
+    color: $text-black
+  &-duties
+    padding-left: 20px
+    line-height: 24px
+  &-duty
+    color: $col-gr-59
+    font-size: 16px
+    line-height: 24px
+  &::marker
+    color: $title-bg-col2
+
+/* My education */
+
+.my-education
+  display: grid
+  margin: 0
+  // grid-template-rows: 1fr 2fr
+  &-section
+    color: $text-black
+    margin: 0 40px
+      // padding: 0
+  &-list
+      // margin: 0 15px 0 0
+  &-name
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 20px
+    margin-top: 10px
+    color: $title-bg-col2
+      // margin: 20px 5px 5px 5px
+  &-prof
+    margin-top: 10px
+    color: $text-black
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+      // margin: 5px
+  &-time
+    margin-top: 10px
+    font-size: 12px
+    color: $text-grey
+      // margin: 5px
+
+.my-study-time-devider
+  color: $text-black
+
+.my-education-block
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: "my-education-block-one" "my-education-block-two"
+  text-align: left
+  margin: 0
+  padding: 0
+  &-one
+    grid-area: my-education-block-one
+    position: relative
+    grid-column: 1/2
+    grid-row: 2/3
+    // margin: 0
+    // padding: 0
+  &-two
+    grid-area: my-education-block-two
+    position: relative
+    grid-column: 2/3
+    grid-row: 2/3
+            // margin: 0
+            // padding: -30px
+
+/* Code Example */
+
+.code-example-section, .educational-project-section
+  margin: 0 40px
+
+.code-example-title, .educational-project-title
+  text-align: center
+  font-size: 20px
+  margin-left: -40px
+  line-height: 30px
+
+.code-example-section
+  // height: 250px
+
+.pre
+  margin-left: -7%
+  height: 100%
+
+.code
+  // width: 120%
+  // margin: 0
+  // padding: 0
+
+/* Educational project */
+
+.educational-project-section
+  padding-bottom: 20px
+  margin-left: 5%
+
+.educational-project-link
+  text-decoration: none
+  color: $sidebar-bg
+
+/* My сertificates */
+
+.my-certificates-section
+  margin: 0 40px
+  &-block
+
+.certificate-img
+  padding: 10px
+  &-one
+    width: 25%
+      // cursor: -moz-zoom-in
+      // cursor: -webkit-zoom-in
+    cursor: pointer
+    margin-bottom: 30px
+
+.certificate-img-one:hover
+  transform: scale(2.5)
+  transition: 0.7s
+
+// .main-content-title
+//     // display: grid
+
+// .about-me-prof
+//     font-size: 20px
+//     font-weight: 700px
+//     color: $text-black
+
+.footer-base
+  position: relative
+  display: flex
+  flex-direction: row
+  height: 100px
+  width: 100%
+  background-color: $footer-bg-col1
+  margin: auto
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1)
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 20px 0 20px 0
+
+.footer-descriptoin-ul
+  margin-left: -10%
+  padding-inline-start: 0px
+
+.footer-descriptoin-li
+  list-style-type: none
+  color: $text-black
+
+.footer-descriptoin-fp
+  color: $text-grey
+
+.social
+  width: 40%
+  margin-left: 10%
+  display: grid
+  grid-template-columns: repeat(auto-fit, 120px)
+  text-decoration: none
+  align-items: center
+  justify-content: center
+
+.fa
+  color: $sidebar-bg
+
+.social-item
+.rs-logo
+  // width: 150px
+@import '_media.sass'
